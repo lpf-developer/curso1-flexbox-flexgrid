@@ -1,0 +1,61 @@
+body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+div p{
+    background-color: #1d1e20;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;/* tela comprimida: menu abaixo do logo */
+    justify-content: space-between;
+    align-items: center; /* alinhamento vertical logo */
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+/* CSS Flex Box */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap; /* admite a quebra de linha */
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex div{
+    /* expandir, encolher, quebra de linha se a imagem não poder ser renderizada
+    em 200px [ objeto pai configurado com flex-wrap ] */
+    flex: 1 1 200px;
+    margin: 10px;
+}
